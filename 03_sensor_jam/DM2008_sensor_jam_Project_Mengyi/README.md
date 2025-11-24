@@ -1,19 +1,62 @@
-### Features
-1. **Shape Customization Core**
-   - Toggle between **circle** and **square** with a single button click for quick shape switching.
-   - Adjust the shape’s size via a responsive slider, with real-time pixel value display for precise control over dimensions.
-   - Customize the shape’s fill color using a native color picker, supporting both hex codes and visual color selection.
+# Final Project: Heartbeat-Responsive Space Visual
 
-2. **Visual Style Tuning**
-   - Fine-tune shape opacity from 0% (fully transparent) to 100% (opaque) with a percentage-labeled slider, enabling layered visual effects.
-   - Toggle a 3px border on/off for the shape, paired with a dedicated color picker to set border hues independently from the fill color.
+**Team Members:**  
+- ARIEL WILLY SARAGI S — U2430024F  
+- Mengyi — U2422442K  
 
-3. **Animation & Positioning**
-   - Activate/deactivate smooth rotation animation for the shape, with a consistent 2° per frame rotation speed for fluid motion.
-   - Adjust the shape’s position on the canvas using X/Y offset sliders, allowing precise placement across the entire canvas area.
+---
 
-4. **Canvas & UI Experience**
-   - Customize the canvas background color via a dedicated color picker, enabling full visual theme matching with the shape.
-   - A fixed, modern control panel with soft shadows and rounded corners organizes all controls into logical sections (shape, style, animation), ensuring intuitive navigation.
-   - Real-time preview of all adjustments—every slider, button, or color picker change is reflected instantly on the canvas with no lag.
-   - Cross-browser compatibility, working seamlessly on Chrome, Firefox, Safari, and Edge for consistent access across devices.
+## Project Overview
+
+For our final project, our team wanted to create a **relaxation-based alternative visual**, something that reacts to a person’s heartbeat but doesn’t add pressure or stress.  
+
+We intentionally chose an **outer-space theme** because space evokes a sense of nothingness — but in a comforting way. There’s no noise, no demands, no responsibilities. Just a huge, quiet universe where you don’t have to worry about anything. That sense of openness and emptiness becomes the emotional foundation of the whole visual.
+
+---
+
+## Implementation
+
+To translate that feeling into code, we built a **3D interactive environment using p5.js with WEBGL**. The core logic combines several systems working together:
+
+### 1. Heartbeat-Responsive Rhythm
+- The BPM sensor drives the internal “pulse.”
+- Higher BPM increases distortion, ring expansion, and particle energy.
+- Lower BPM slows down everything, allowing the scene to breathe and soften.
+- All visual elements are synced to the user’s heart.
+
+### 2. Floating Heart Network
+- The heart shape is created using hundreds of 3D nodes connected with lines.
+- Each node jitters slightly, giving a living, breathing quality.
+- The heart expands and contracts based on the BPM.
+
+### 3. Breathing Particle Rings
+- Surrounding the heart, a ring of particles rotates like a galaxy.
+- Colors shift from calm blues to warmer reds depending on stress level.
+- Movement is smoother during calm states and more chaotic with elevated heart rate.
+
+### 4. Saturn-Like Ring System
+- Layered rotating rings provide a cosmic, meditative feeling.
+- Rings pulse gently, tied algorithmically to the heartbeat and breathing cycle.
+
+### 5. Starfield Background
+- Thousands of stars move slowly in 3D space.
+- Stars flicker softly, affected by noise + sine waves, creating a tranquil atmosphere.
+
+### 6. Click-Activated Particle Bursts
+- On user click, soft white particles burst outward like tiny stars.
+- Provides a small interactive moment without breaking calmness.
+
+---
+
+## Experience
+
+The entire visual is designed so that nothing feels sharp or stressful.  
+Everything flows, rotates, pulses, and reacts gently. The user’s heartbeat becomes the center of the universe, and the universe responds with calmness.  
+
+The goal is to provide a **space where you can breathe, relax, and just exist**.
+
+---
+
+## Technologies Used
+- **p5.js** (with WEBGL)  
+- JavaScript, HTML, CSS  
