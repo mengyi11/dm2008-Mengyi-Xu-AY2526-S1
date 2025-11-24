@@ -55,8 +55,3 @@ Everything flows, rotates, pulses, and reacts gently. The user’s heartbeat bec
 
 The goal is to provide a **space where you can breathe, relax, and just exist**.
 
----
-
-## Technologies Used
-- **p5.js** (with WEBGL)  
-- JavaScript, HTML, CSS  
