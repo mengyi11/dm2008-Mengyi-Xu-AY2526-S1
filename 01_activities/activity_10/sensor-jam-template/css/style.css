@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+button {
+  border-radius: 500px;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  border: solid thin white;
+
+  background: white;
+
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 0.75rem;
+
+  cursor: pointer;
+  transition: all 200ms;
+  &:hover {
+    background: green;
+    color: white;
+  }
+}
+
+.connected:hover {
+  background: #c30000;
+  color: white;
+}
+
+.big-btn {
+  font-size: 24px;
+  padding: 12px 24px;     
+  background-color: #082E5B; 
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer; 
+}
+
+.big-btn:hover {
+  background-color: #A7356E; 
+}
